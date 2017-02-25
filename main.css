@@ -1,5 +1,44 @@
 body{
     font-family: sans-serif;
-	font-size: 18;
+	font-size: 18px;
 	background: rgb(245,245,245);
+}
+.name{
+    font-size: 36px;
+    text-align: center;
+}
+.contact{
+    /*font-size: 24px;*/
+    text-align: center;
+}
+.sidenav {
+    display: block;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    /*z-index: 1;
+    top: 50px;*/
+    left: 0;
+    background-color: rgb(40,40,40);
+    /*overflow-x: hidden;*/
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #919191;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

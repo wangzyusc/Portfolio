@@ -4,8 +4,34 @@
         <meta charset="utf-8">
         <title>Zhiyuan Wang's Homepage</title>
         <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
-        <p>Zhiyuan Wang</p>
+        <script type="text/javascript">
+            switch2bio();
+        </script>
+        <div id="sidenav" class="sidenav">
+            <a id="navbio" onclick="switch2bio()"><i class="fa fa-user-o" aria-hidden="true"></i> About me</a>
+            <a id="navresearch" onclick="switch2research()"><i class="fa fa-file-o" aria-hidden="true"></i> Research</a>
+            <a id="navwork" onclick="switch2work()"><i class="fa fa-sign-in" aria-hidden="true"></i> Work Experience</a>
+            <a id="navproject" onclick="switch2project()"><i class="fa fa-star" aria-hidden="true"></i> Projects</a>
+            <a id="navresume" href="resume.pdf">My Resume</a>
+        </div>
+        <p class="name">Zhiyuan Wang</p>
+        <p class="contact">(213)245-7824 | wangzhiy@usc.edu</p>
+        <p class="contact">University of Southern California, Los Angeles, CA 90089</p>
+        <div id="biography">
+            <p class="name">Biography</p>
+        </div>
+        <div id="research">
+            <p class="name">Research</p>
+        </div>
+        <div id="workexp">
+            <p class="name">Work Experience</p>
+        </div>
+        <div id="project">
+            <p class="name">Projects</p>
+        </div>
     </body>
 </html>
