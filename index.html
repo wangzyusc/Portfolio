@@ -3,25 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>Zhiyuan Wang's Homepage</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://use.fontawesome.com/eb62d93e1b.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
         <div id="sidenav" class="sidenav">
-            <!--<a id="navbio" onclick="switch2bio()"><i class="fa fa-user-o" aria-hidden="true"></i> About me</a>
-            <a id="navresearch" onclick="switch2research()"><i class="fa fa-file-o" aria-hidden="true"></i> Research</a>
-            <a id="navwork" onclick="switch2work()"><i class="fa fa-sign-in" aria-hidden="true"></i> Work Experience</a>
-            <a id="navproject" onclick="switch2project()"><i class="fa fa-star" aria-hidden="true"></i> Projects</a>
-            <a id="navresume" href="resume.pdf">My Resume</a>-->
-            <a id="navbio" href="#biography"><i class="fa fa-user-o" aria-hidden="true"></i> Biography</a>
-            <a id="navresearch" href="#research"><i class="fa fa-file-o" aria-hidden="true"></i> Research</a>
-            <a id="navwork" href="#workexp"><i class="fa fa-sign-in" aria-hidden="true"></i> Work Experience</a>
+            <a><img weight="128px" height="160px" src="src/Zhiyuan_Wang.jpg"></a>
+            <a id="navbio" href="#biography"><i class="fa fa-user" aria-hidden="true"></i> Biography</a>
+            <a id="navresearch" href="#research"><i class="fa fa-bar-chart" aria-hidden="true"></i> Research</a>
+            <a id="navwork" href="#workexp"><i class="fa fa-cog" aria-hidden="true"></i> Work Experience</a>
             <a id="navproject" href="#project"><i class="fa fa-star" aria-hidden="true"></i> Projects</a>
-            <a id="navresume" href="src/resume.pdf">My Resume</a>
+            <a id="navresume" target="_blank" href="src/Resume_Zhiyuan_Wang_USC.pdf"><i class="fa fa-file-text-o" aria-hidden="true"></i> My Resume</a>
         </div>
         <div class="home" id="biography">
-            <!--<p class="name">Biography</p>-->
             <p class="name">Zhiyuan Wang</p>
             <p class="contact">(213)245-7824 | wangzhiy@usc.edu<br/>
             University of Southern California, Los Angeles, CA 90089</p>
@@ -30,29 +26,45 @@
                 <a target="_blank" href="http://github.com/wangzyusc/"><img id="logogithub" src="src/logo_github.png"></a>
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=100010616656216"><img id="logofb" src="src/logo_fb.png"></a>
             </div>
-            <p>Hi, I'm Zhiyuan Wang, a Master of Science student in Computer Science at <a target="_blank" href="http://www.usc.edu">University of Southern California</a>, expected to graduate on May 2018. Beginning January 2017, I'm also a Graduate Research Assistant of Spatial Science Institute at USC, working with Assistant Professor <a target="_blank" href="http://yoyoi.info">Yao-Yi Chiang</a> on digital map processing project.</p>
-            <p>Before attending USC, I have received my Bachelor of Engineering degree in Information Engineering at <a target="_blank" href="http://www.zju.edu.cn/english/">Zhejiang University (ZJU)</a>, China, on June 2016.</p>
+            <p>Hi, I'm Zhiyuan Wang, a Master of Science student in Computer Science at <a class="extlink" target="_blank" href="http://www.usc.edu">University of Southern California</a>, expected to graduate on May 2018. Beginning January 2017, I'm also a Graduate Research Assistant of Spatial Science Institute at USC, working with Assistant Professor <a class="extlink" target="_blank" href="http://yoyoi.info">Yao-Yi Chiang</a> on digital map processing project.</p>
+            <p>Before attending USC, I have received my Bachelor of Engineering degree in Information Engineering, with the honor of Outstanding Graduate at <a class="extlink" target="_blank" href="http://www.zju.edu.cn/english/">Zhejiang University (ZJU)</a>, China, on June 2016. </p>
             <p>I'm actively seeking for a Software Engineer Internship on 2017 summer, utilizing my background in software development. Please feel free to contact me via email. Thank you.</p>
+            <p>My technical skills are as below:</p>
+            <p>Proficient in C++, Java, Python, C, MATLAB, Linux, git, OpenCV, Caffe, Visual Studio, Eclipse, Emacs<br/>Familiar with HTML/CSS, JavaScript, AJAX, jQuery, Bootstrap, AngularJS, PHP, Android</p>
         </div>
         <div class="home" id="research">
             <p class="name">Research</p>
-            <p class="itemtitle">Graduate Research Assistant<br/>Supervisor: Yao-Yi Chiang<br>Spatial Science Institute at USC</p>
+            <p class="itemtitle">Graduate Research Assistant<br/>Supervisor: <a class="extlink" target="_blank" href="http://yoyoi.info">Yao-Yi Chiang</a><br>Spatial Science Institute at USC</p>
             <p>Unlocking map: Automatic Metadata Creation for Digital Collections</p>
             <p>Design, implement and test OCR algorithms to extract and recognize text in map images.</p>
-            <p class="itemtitle">Undergraduate Research Assistant<br/>Supervisor: Mingli Song<br/>MicroSoft Visual Perception Laboratory at ZJU</p>
+            <p class="itemtitle">Undergraduate Research Assistant<br/>Supervisor: <a class="extlink" target="_blank" href="http://person.zju.edu.cn/en/msong">Mingli Song</a><br/>Microsoft Visual Perception Laboratory at ZJU</p>
             <p>Pedestrian Detection based on Deep Learning</p>
-            <p>Implemented image-based pedestrian detection in Caffe framework, with Average Precisions (AP) reaching 85.1%, boosted 10% from original best algorithms.<br>
-            Adopted Selective Search algorithm extracting proposal, Fast R-CNN as detector, and AlexNet and VGGNet as network structure.<br/>
+            <p>Implemented image-based pedestrian detection in Caffe framework, with Average Precisions (AP) reaching 85.1%, boosted 10% from original best algorithms.<br>Adopted Selective Search algorithm extracting proposal, Fast R-CNN as detector, and AlexNet and VGGNet as network structure.<br/>
             Pre-trained the networks on ImageNet dataset, fine-tuned on INRIA Pedestrian Image Train dataset, and tested on INRIA Pedestrian Image Test dataset.</p>
+            <p class="itemtitle">Publication</p>
+            <p>Song, X., Chen, K., Lei, J., Sun, L., Wang, Z., Xie, L., & Song, M. (2016, July). Category driven deep recurrent neural network for video summarization. In Multimedia & Expo Workshops (ICMEW), 2016 IEEE International Conference on (pp. 1-6). IEEE.</p>
         </div>
-        <div id="workexp">
+        <div class="home" id="workexp">
             <p class="name">Work Experience</p>
+            <p class="itemtitle">Research Software Develop Intern<br/><a class="extlink" target="_blank" href="http://www.wondermatrixvr.com/">WonderMatrix</a></p>
+            <p>Stereo Panoramic Rendering System</p>
+            <p>Built a stereo panoramic scene rendering system with unprecedented high quality.<br/>
+                Taking images captured from various directions as well as depth information as input, produced high-quality rendering results for GearVR HMD.<br/>
+                Unlike existing solutions, the novel solution produces result free of rendering and stitching artifacts and reproduced realistic 3D effect for the viewer.<br/>
+                Designed and implemented core stitching algorithm; re-factored the rendering code to reduce memory footprint by a factor of 18x.</p>
         </div>
-        <div id="project">
+        <div class="home" id="project">
             <p class="name">Projects</p>
+            <p class="itemtitle">Cellphone Image Enhancement Project</p>
+            <p>Built a system enhancing images captured from cellphone cameras by HDR, background blurring and contrast enhancement. Collaborated with a development team of four.<br/>Promoted effect of background blurring by implementing joint-histogram weighted median filter, adopting K-means clustering of feature image and adaptive quantization of input image.</p>
+            <p class="itemtitle">Congress Information Search Android App</p>
+            <p>Built an App product on Android; Implemented information searching, filtering and displaying for congress legislators, bills and committees.<br/>
+                Implemented back-end PHP script running on AWS to request and retrieve JSON from RESTful API web server.<br/>
+                Implemented four fragment activities in Android App, each with several tabs containing list of results; Used AsyncTask to request and retrieve search results with back-end AWS server.</p>
+            <p class="itemtitle">Congress Information Search Webpage</p>
+            <p>Built a responsive web page with functions including information searching, filtering and displaying for congress legislators, bills and committees.<br/>
+                Implemented webpage using JavaScript, with AngularJS framework and Bootstrap. Used AngularJS Pagination, Bootstrap Form and Carousel.</p>
         </div>
-        <script type="text/javascript">
-            //switch2bio();
-        </script>
+        <p id="copyright">&#169; 2016 - 2017 Zhiyuan Wang</p>
     </body>
 </html>
