@@ -8,24 +8,42 @@
         <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
-        <script type="text/javascript">
-            switch2bio();
-        </script>
         <div id="sidenav" class="sidenav">
-            <a id="navbio" onclick="switch2bio()"><i class="fa fa-user-o" aria-hidden="true"></i> About me</a>
+            <!--<a id="navbio" onclick="switch2bio()"><i class="fa fa-user-o" aria-hidden="true"></i> About me</a>
             <a id="navresearch" onclick="switch2research()"><i class="fa fa-file-o" aria-hidden="true"></i> Research</a>
             <a id="navwork" onclick="switch2work()"><i class="fa fa-sign-in" aria-hidden="true"></i> Work Experience</a>
             <a id="navproject" onclick="switch2project()"><i class="fa fa-star" aria-hidden="true"></i> Projects</a>
-            <a id="navresume" href="resume.pdf">My Resume</a>
+            <a id="navresume" href="resume.pdf">My Resume</a>-->
+            <a id="navbio" href="#biography"><i class="fa fa-user-o" aria-hidden="true"></i> Biography</a>
+            <a id="navresearch" href="#research"><i class="fa fa-file-o" aria-hidden="true"></i> Research</a>
+            <a id="navwork" href="#workexp"><i class="fa fa-sign-in" aria-hidden="true"></i> Work Experience</a>
+            <a id="navproject" href="#project"><i class="fa fa-star" aria-hidden="true"></i> Projects</a>
+            <a id="navresume" href="src/resume.pdf">My Resume</a>
         </div>
-        <p class="name">Zhiyuan Wang</p>
-        <p class="contact">(213)245-7824 | wangzhiy@usc.edu</p>
-        <p class="contact">University of Southern California, Los Angeles, CA 90089</p>
-        <div id="biography">
-            <p class="name">Biography</p>
+        <div class="home" id="biography">
+            <!--<p class="name">Biography</p>-->
+            <p class="name">Zhiyuan Wang</p>
+            <p class="contact">(213)245-7824 | wangzhiy@usc.edu<br/>
+            University of Southern California, Los Angeles, CA 90089</p>
+            <div class="logorow">
+                <a target="_blank" href="http://linkedin.com/in/wangzhiy"><img id="logolinkedin" src="src/logo_linkedin.png"></a>
+                <a target="_blank" href="http://github.com/wangzyusc/"><img id="logogithub" src="src/logo_github.png"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100010616656216"><img id="logofb" src="src/logo_fb.png"></a>
+            </div>
+            <p>Hi, I'm Zhiyuan Wang, a Master of Science student in Computer Science at <a target="_blank" href="http://www.usc.edu">University of Southern California</a>, expected to graduate on May 2018. Beginning January 2017, I'm also a Graduate Research Assistant of Spatial Science Institute at USC, working with Assistant Professor <a target="_blank" href="http://yoyoi.info">Yao-Yi Chiang</a> on digital map processing project.</p>
+            <p>Before attending USC, I have received my Bachelor of Engineering degree in Information Engineering at <a target="_blank" href="http://www.zju.edu.cn/english/">Zhejiang University (ZJU)</a>, China, on June 2016.</p>
+            <p>I'm actively seeking for a Software Engineer Internship on 2017 summer, utilizing my background in software development. Please feel free to contact me via email. Thank you.</p>
         </div>
-        <div id="research">
+        <div class="home" id="research">
             <p class="name">Research</p>
+            <p class="itemtitle">Graduate Research Assistant<br/>Supervisor: Yao-Yi Chiang<br>Spatial Science Institute at USC</p>
+            <p>Unlocking map: Automatic Metadata Creation for Digital Collections</p>
+            <p>Design, implement and test OCR algorithms to extract and recognize text in map images.</p>
+            <p class="itemtitle">Undergraduate Research Assistant<br/>Supervisor: Mingli Song<br/>MicroSoft Visual Perception Laboratory at ZJU</p>
+            <p>Pedestrian Detection based on Deep Learning</p>
+            <p>Implemented image-based pedestrian detection in Caffe framework, with Average Precisions (AP) reaching 85.1%, boosted 10% from original best algorithms.<br>
+            Adopted Selective Search algorithm extracting proposal, Fast R-CNN as detector, and AlexNet and VGGNet as network structure.<br/>
+            Pre-trained the networks on ImageNet dataset, fine-tuned on INRIA Pedestrian Image Train dataset, and tested on INRIA Pedestrian Image Test dataset.</p>
         </div>
         <div id="workexp">
             <p class="name">Work Experience</p>
@@ -33,5 +51,8 @@
         <div id="project">
             <p class="name">Projects</p>
         </div>
+        <script type="text/javascript">
+            //switch2bio();
+        </script>
     </body>
 </html>

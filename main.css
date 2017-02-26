@@ -1,23 +1,42 @@
 body{
-    font-family: sans-serif;
+    font: lighter HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 18px;
-	background: rgb(245,245,245);
+	/*background: rgb(245,245,245);*/
+    padding: 0;
+    margin: 0;
+}
+.home{
+    /*position: fixed;*/
+    left: 200px;
+    right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
+    width=100%;
 }
 .name{
     font-size: 36px;
     text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
 }
 .contact{
     /*font-size: 24px;*/
+    padding-top: 0px;
+    margin-top: 5px;
     text-align: center;
+    line-height: 130%;
+}
+.itemtitle{
+    text-align: left;
+    font-weight: bold;
 }
 .sidenav {
     display: block;
     height: 100%;
     width: 200px;
     position: fixed;
-    /*z-index: 1;
-    top: 50px;*/
+    /*z-index: 1;*/
+    top: 0px;
     left: 0;
     background-color: rgb(40,40,40);
     /*overflow-x: hidden;*/
@@ -41,4 +60,23 @@ body{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+.logorow{
+    text-align: center;
+    margin: 0;
+}
+#logolinkedin{
+    width: 44px;
+    height: 40px;
+    margin: 2px;
+}
+#logogithub{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+}
+#logofb{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
 }
