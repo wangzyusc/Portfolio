@@ -46,8 +46,13 @@
                     Caffe, Python, Matlab</span></p>
                 <p style="margin-bottom:0">➣ Implemented image-based pedestrian detection in Caffe framework, with Average Precisions (AP) reaching 85.1%, boosted 10% from original best algorithms.<br>➣ Adopted Selective Search algorithm extracting proposal, Fast R-CNN as detector, and AlexNet and VGGNet as network structure.<br/>
                 ➣ Pre-trained the networks on ImageNet dataset, fine-tuned on INRIA Pedestrian Image Train dataset, and tested on INRIA Pedestrian Image Test dataset.<br/></p>
-                <div id="viewpedestrian"><a class="extlink" target="_blank" onclick="ViewPedestrianDetection()">View Detail...</a></div>
-                <div id="pedestrian">
+                <div id="viewpedestrian">
+                    <a class="extlink" onclick="ViewPedestrianDetail()">View Detail...</a>
+                </div>
+                <div id="hidepedestrian">
+                    <a class="extlink" onclick="HidePedestrianDetail()">Hide Detail...</a>
+                </div>
+                <div id="pedestrian" style="display:none">
                     <div>Fast R-CNN algorithm pipeline</div>
                     <img width='50%' src='src/PedestrianDetection/FastRCNN.png'>
                     <div>CaffeNet network structure</div>
