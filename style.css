@@ -87,6 +87,15 @@ body{
     color: rgb(100, 200, 100);
     font-weight: bold;
 }
+.divpro{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.divpro:hover{
+    background: aliceblue;
+}
 #copyright{
     margin: 20px;
     text-align: center;
