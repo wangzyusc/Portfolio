@@ -44,8 +44,24 @@
                 <p class="itemtitle">Undergraduate Research Assistant<br/><span style="font-weight:normal">Microsoft Visual Perception Laboratory at ZJU, February - May 2016<br/>Supervisor: <a class="extlink" target="_blank" href="http://person.zju.edu.cn/en/msong">Mingli Song</a></span></p>
                 <p class="itemtitle">Pedestrian Detection based on Deep Learning<br/><span style="font-weight:normal">
                     Caffe, Python, Matlab</span></p>
-                <p>➣ Implemented image-based pedestrian detection in Caffe framework, with Average Precisions (AP) reaching 85.1%, boosted 10% from original best algorithms.<br>➣ Adopted Selective Search algorithm extracting proposal, Fast R-CNN as detector, and AlexNet and VGGNet as network structure.<br/>
-                ➣ Pre-trained the networks on ImageNet dataset, fine-tuned on INRIA Pedestrian Image Train dataset, and tested on INRIA Pedestrian Image Test dataset.</p>
+                <p style="margin-bottom:0">➣ Implemented image-based pedestrian detection in Caffe framework, with Average Precisions (AP) reaching 85.1%, boosted 10% from original best algorithms.<br>➣ Adopted Selective Search algorithm extracting proposal, Fast R-CNN as detector, and AlexNet and VGGNet as network structure.<br/>
+                ➣ Pre-trained the networks on ImageNet dataset, fine-tuned on INRIA Pedestrian Image Train dataset, and tested on INRIA Pedestrian Image Test dataset.<br/></p>
+                <div id="viewpedestrian"><a class="extlink" target="_blank" onclick="ViewPedestrianDetection()">View Detail...</a></div>
+                <div id="pedestrian">
+                    <div>Fast R-CNN algorithm pipeline</div>
+                    <img width='50%' src='src/PedestrianDetection/FastRCNN.png'>
+                    <div>CaffeNet network structure</div>
+                    <img width='70%' src='src/PedestrianDetection/CaffeNet.png'>
+                    <div>Precision and Recall curve with respect to IoU</div>
+                    <img width='45%' src='src/PedestrianDetection/Pre-IoU.png'>
+                    <img width='45%' src='src/PedestrianDetection/Rec-IoU.png'>
+                    <div>Some detection examples</div>
+                    <div>Bounding boxes: Red - Ground truth, Green - Detection result</div>
+                    <img width='47%' src='src/PedestrianDetection/example1.png'>
+                    <img width='47%' src='src/PedestrianDetection/example2.png'>
+                    <img width='47%' src='src/PedestrianDetection/example3.png'>
+                    <img width='47%' src='src/PedestrianDetection/example4.png'>
+                </div>
                 <p class="itemtitle">Publication</p>
                 <p>Song, X., Chen, K., Lei, J., Sun, L., <b>Wang, Z.</b>, Xie, L., & Song, M. (2016, July). Category driven deep recurrent neural network for video summarization. In Multimedia & Expo Workshops (ICMEW), 2016 IEEE International Conference on (pp. 1-6). IEEE.</p>
             </div>
@@ -76,7 +92,8 @@
             <div class="divpro">
                 <p class="itemtitle">Congress Information Search Webpage<br/><span style="font-weight:normal">October 2016<br/>JavaScript, AJAX, Bootstrap, AngularJS, PHP, AWS</span></p>
                 <p>➣ Built a responsive web page with functions including information searching, filtering and displaying for congress legislators, bills and committees.<br/>
-                ➣ Implemented webpage using JavaScript, with AngularJS framework and Bootstrap. Used AngularJS Pagination, Bootstrap Form and Carousel.</p>
+                ➣ Implemented webpage using JavaScript, with AngularJS framework and Bootstrap. Used AngularJS Pagination, Bootstrap Form and Carousel.<br/>
+                <a class="extlink" target="_blank" href="http://cs-server.usc.edu:29882/hw8.html">View Detail...</a></p>
             </div>
         </div>
         <p id="copyright">Copyright &#169; 2016 - 2017 Zhiyuan Wang. All rights reserved.</p>
